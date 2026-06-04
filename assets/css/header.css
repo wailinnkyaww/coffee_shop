@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+.header {
+  padding: 20px 70px;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 1395px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: 70px;
+}
+
+.nav-lists {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-lists a {
+  color: var(--clr-neutral-900);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-lists {
+    display: none;
+  }
+
+  .header {
+    margin-inline: auto;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    margin: 0 auto;
+    width: 350px;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 35px;
+  }
+
+  .btn-order {
+    width: 110px;
+    height: 31px;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    opacity: 1;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    gap: 10px;
+    border-radius: 5px;
+  }
+
+  .btn-order:hover {
+    background-color: var(--clr-neutral-200);
+    color: var(--clr-primary-500);
+    border: none;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--clr-neutral-900);
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-lists.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: var(--clr-neutral-100);
+    width: 390px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+}

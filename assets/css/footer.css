@@ -1,0 +1,143 @@
+@charset 'utf-8';
+
+.sec-footer-container {
+  background-color: var(--clr-primary);
+  padding: 80px;
+}
+
+.footer-inner {
+  display: flex;
+  padding-block: 80px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  color: var(--clr-neutral-100);
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: 110px;
+  margin: 0 60px;
+}
+
+.footer-logo figcaption {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 72px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+}
+
+.sec-footer hr {
+  border: 2px solid var(--clr-neutral-100);
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social .email-send {
+  padding-right: 80px;
+  display: flex;
+  gap: 0px;
+}
+
+.social input {
+  width: 370px;
+  color: var(--clr-neutral-100);
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background-color: var(--clr-primary-500);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+
+.social .btn-send {
+  margin-right: 100px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  padding: 10px 30px;
+  color: var(--clr-primary-500);
+  background-color: var(--clr-neutral-100);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sec-footer input:focus,
+.sec-footer button:focus {
+  outline: none;
+  border: 1px solid var(--clr-primary-500);
+  box-shadow: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 40px;
+  float: right;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: var(--clr-neutral-100);
+  font-size: 25px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  background-color: var(--clr-neutral-100);
+  font-family: var(--font-primary);
+  color: var(--clr-primary);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
