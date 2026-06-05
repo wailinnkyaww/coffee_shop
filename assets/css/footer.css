@@ -2,14 +2,16 @@
 
 .sec-footer-container {
   background-color: var(--clr-primary);
-  padding: 80px;
+  padding: 80px 24px;
 }
 
 .footer-inner {
   display: flex;
+  flex-wrap: wrap;
   padding-block: 80px 40px;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .footer-logo {
@@ -65,18 +67,22 @@
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .social .email-send {
-  padding-right: 80px;
   display: flex;
-  gap: 0px;
+  flex-wrap: wrap;
+  gap: 0;
+  padding-right: 0;
+  width: min(100%, 500px);
 }
 
 .social input {
-  width: 370px;
+  width: min(370px, 100%);
   color: var(--clr-neutral-100);
   font-family: var(--font-primary);
   font-weight: 400;
@@ -89,7 +95,7 @@
 }
 
 .social .btn-send {
-  margin-right: 100px;
+  margin-right: 0;
   font-family: var(--font-primary);
   font-weight: 400;
   font-style: normal;
@@ -113,7 +119,8 @@
 
 .social-icons {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px 40px;
   float: right;
   align-items: center;
   justify-content: center;

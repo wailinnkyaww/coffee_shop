@@ -1,3 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Page-specific JavaScript for index page
+document.querySelectorAll('*').forEach(el => {
+  if (el.offsetWidth > document.documentElement.offsetWidth) {
+    console.log('Overflowing element:', el);
+  }
 });
