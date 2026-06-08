@@ -173,6 +173,24 @@ img {
   margin-bottom: 10px;
 }
 
+.nav-btn {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  color: #C67C4E;
+  font-size: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0 10px;
+  box-shadow: none;
+  z-index: 15;
+}
+
 .sec-categories .sec-ttl {
   /* text-align: center; */
   margin-bottom: 30px;
