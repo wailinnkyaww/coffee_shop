@@ -447,29 +447,27 @@ img {
   margin-bottom: 80px;
 }
 
-.sec-ingredients .ingredients-slider-wrapper {
-  display: flex;
-  gap: 40px;
-  flex-wrap: nowrap;
-  position: relative;
+/* Let Swiper manage width calculation rules seamlessly */
+.sec-ingredients .ingredients-carousel {
   width: 100%;
   max-width: 1185px;
   margin-inline: auto;
-  padding-inline: 80px;
-  overflow-x: hidden;
+  padding-inline: 40px;
+  overflow: hidden;
 }
 
-.sec-ingredients .ingredients-slider {
+/* Removed flex/gap overrides to prevent slider engine break down */
+.sec-ingredients .ingredients-slider-wrapper {
+  position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 .sec-ingredients .ingredient-card {
   text-align: center;
+  height: auto; /* Ensures even structural card distribution scales nicely */
 }
 
 .sec-ingredients .ingredient-article {
-  /* background-color: var(--clr-neutral-200); */
   border-radius: 8px;
   padding: 20px;
   transition: var(--transition-smooth);
@@ -498,6 +496,32 @@ img {
   font-size: 16px;
   font-weight: 400;
   color: var(--clr-neutral-900);
+}
+
+/* Pagination positioning styling adjustments */
+.sec-ingredients .carousel-pagination.swiper-pagination {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin-top: 40px;
+  z-index: 10;
+  width: 100%;
+}
+
+.sec-ingredients .carousel-pagination .swiper-pagination-bullet {
+  background-color: #e2d6cc;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  display: inline-block;
+  border-radius: 50%;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.sec-ingredients .carousel-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--clr-primary);
+  transform: scale(1.2);
 }
 
 @media (max-width: 1200px) {
