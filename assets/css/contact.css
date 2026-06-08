@@ -41,7 +41,7 @@ h1 {
   color: var(--clr-secondary);
   font-weight: 800;
   text-transform: lowercase;
-  line-height: 45px;
+  line-height: 130%;
   letter-spacing: 0.5px;
 }
 
@@ -77,7 +77,7 @@ h1 {
 }
 
 .btn-primary:hover {
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-200);
   color: var(--clr-primary);
 }
 
@@ -93,7 +93,7 @@ h1 {
 }
 
 .btn-primary-small:hover {
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-200);
   color: var(--clr-primary);
 }
 
@@ -164,7 +164,6 @@ h1 {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-100);
   position: relative;
-  /* margin-block: 50px; */
   margin-top: -80px;
 }
 
@@ -372,9 +371,8 @@ h1 {
   }
 
   .sec-contact,
-  .sec-message,
-  .subject {
-    padding-block: 80px;
+  .sec-message {
+    padding-block: 100px;
   }
 
   .sec-ttl,
@@ -540,10 +538,6 @@ h1 {
     line-height: 42px;
   }
 
-  .banner-text.text-right {
-        text-align: right;
-        margin-left: auto; 
-    }
   .connect-title {
     font-size: 38px;
   }
@@ -813,7 +807,6 @@ h1 {
   }
 
   .text-right {
-    padding-right: 0;
     min-width: 200px;
   }
 
