@@ -39,7 +39,7 @@ body {
 }
 
 .sec-wrap {
-  --max-width: 1080px;
+  --max-width: 1200px;
   --padding: 80px;
 
   width: min(var(--max-width), 100% - var(--padding));
