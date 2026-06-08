@@ -52,9 +52,10 @@ svg {
 }
 
 .sec-wrap {
-  --max-width: 1200px;
-  --padding: 48px;
-  width: min(var(--max-width), calc(100% - (var(--padding) * 2)));
+  --max-width: 1080px;
+  --padding: 80px;
+
+  width: min(var(--max-width), 100% - var(--padding));
   margin-inline: auto;
 }
 
