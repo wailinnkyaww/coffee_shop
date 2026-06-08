@@ -213,7 +213,7 @@
   .social input {
     font-size: 16px;
     margin: 0;
-    padding: 5px 95px 5px 5px;
+    padding: 5px 90px 5px 5px;
     width: auto;
   }
 
@@ -239,5 +239,9 @@
   .copyright {
     font-size: 14px;
     padding: 10px 62px;
+  }
+
+  .copyright-text {
+    padding-bottom: 18px;
   }
 }

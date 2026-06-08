@@ -94,7 +94,7 @@
 
   .nav {
     margin: 0 auto;
-    max-width: 390px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,8 +103,9 @@
   }
 
   .logo img {
-    width: 70px;
-    height: 49px;
+    margin-left: 10px;
+    width: 50px;
+    height: 37px;
   }
 
   .hamburger {
