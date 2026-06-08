@@ -16,7 +16,7 @@
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: #e3e3e3;
   --clr-neutral-900: #000000;
-
+  --clr-neutral-300:#313131;
   --clr-primary: #562e19;
   --clr-primary-500: #bf662f;
   --clr-secondary: #c67c4e;
@@ -52,7 +52,7 @@ svg {
 }
 
 .sec-wrap {
-  --max-width: 1080px;
+  --max-width: 1200px;
   --padding: 80px;
 
   width: min(var(--max-width), 100% - var(--padding));
