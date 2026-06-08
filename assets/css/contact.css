@@ -17,9 +17,8 @@ h1 {
 }
 
 /* - SECTION GENERAL STYLES - */
-.sec-contact,
-.sec-message {
-  padding-block: 60px;
+.sec-contact{
+  padding-block: 180px;
 }
 
 .contact-title-wrapper {
@@ -112,6 +111,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 55px;
+  margin-top: -20px;
 
 }
 
@@ -164,7 +164,8 @@ h1 {
   background-color: var(--clr-primary);
   color: var(--clr-neutral-100);
   position: relative;
-  margin-block: 50px;
+  /* margin-block: 50px; */
+  margin-top: -80px;
 }
 
 .banner-container {
@@ -209,6 +210,10 @@ h1 {
 }
 
 /* -CONTACT FORM - */
+
+.sec-message {
+  padding-block: 95px;
+}
 .message-title-wrapper {
   display: flex;
   align-items: center;
@@ -314,15 +319,15 @@ h1 {
   font-weight: 700;
   color: #111111;
   text-align: center;
-  margin-top: -20px;
+   margin-top: -55px; 
 }
 
 .social-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px 120px;
+  gap: 55px 110px;
   max-width: 1015px;
-  padding-top: 75px;
+  padding-top: 60px; 
 
 }
 
@@ -341,8 +346,6 @@ h1 {
 }
 
 .social-icon-box {
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,8 +354,6 @@ h1 {
 }
 
 .social-img-icon {
-  width: 700px;
-  height: auto;
   display: block;
   object-fit: contain;
 }
@@ -484,7 +485,7 @@ h1 {
   .sec-contact,
   .sec-message,
   .subject {
-    padding-block: 70px;
+    padding-block: 100px;
   }
 
   .sec-ttl,
@@ -534,12 +535,15 @@ h1 {
     z-index: 10;
   }
 
-
   .banner-text {
     font-size: 32px;
     line-height: 42px;
   }
 
+  .banner-text.text-right {
+        text-align: right;
+        margin-left: auto; 
+    }
   .connect-title {
     font-size: 38px;
   }
@@ -547,8 +551,8 @@ h1 {
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    max-width: 700px;
-    margin: 30px auto 0 auto;
+    /* max-width: 700px;
+    margin: 30px auto 0 auto; */
   }
 }
 
@@ -720,7 +724,7 @@ h1 {
   }
 
   .contact-desc {
-    margin-top: 5px;
+    margin-top: -5px;
     font-size: 14px;
     line-height: 21px;
     padding-top: 20px;
@@ -763,13 +767,13 @@ h1 {
 
   .contact-box {
     text-align: left;
-    gap: 10px;
+    gap: 5px;
   }
 
   .contact-box h3 {
     font-size: 23px;
     line-height: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-left: -10px;
   }
 
@@ -836,8 +840,7 @@ h1 {
   }
 
   .title-line {
-    width: 50px;
-    margin-top: 15px;
+    width: 55px;
     flex-shrink: 0;
     margin-top: -15px;
   }
@@ -848,14 +851,19 @@ h1 {
     text-align: center;
     text-transform: lowercase;
     max-width: 130px;
-    margin-top: -30px;
+    margin-top: 20px;
   }
+
+
+.sec-message {
+  padding-block: 50px;
+}
 
   .form-desc {
     font-size: 14px;
     line-height: 21px;
     padding-top: 20px;
-    margin-top: 20px;
+    /* margin-top: 70px; */
   }
 
   .contact-form {
@@ -896,18 +904,14 @@ h1 {
 
   .connect-title {
     font-size: 33px;
-    margin-top: -40px;
+    margin-top: -50px;
   }
 
   .social-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
     padding-inline: 15px;
     margin-top: -40px;
-  }
-
-  .subject {
-    padding-block: 40px;
   }
 
   .social-item-link {
@@ -921,7 +925,7 @@ h1 {
 
   .social-img-icon {
     width: 100%;
-    height: 100%;
+    
   }
 
   .social-handle {
