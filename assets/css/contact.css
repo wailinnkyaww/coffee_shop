@@ -73,7 +73,7 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   font-family: var(--font-sans);
-  /* transition: background-color 0.2s ease; */
+ 
 }
 
 .btn-primary:hover {
@@ -545,8 +545,7 @@ h1 {
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    /* max-width: 700px;
-    margin: 30px auto 0 auto; */
+  
   }
 }
 
@@ -835,16 +834,16 @@ h1 {
   .title-line {
     width: 55px;
     flex-shrink: 0;
-    margin-top: -15px;
+   
   }
 
   .sect-ttl {
     font-size: 25px;
-    line-height: 25px;
+    line-height: 37px;
     text-align: center;
     text-transform: lowercase;
     max-width: 130px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
 
@@ -860,7 +859,7 @@ h1 {
   }
 
   .contact-form {
-    margin-top: 25px;
+    margin-top: 15px;
     gap: 16px;
   }
 
@@ -894,10 +893,9 @@ h1 {
     margin-top: 10px;
   }
 
-
   .connect-title {
     font-size: 33px;
-    margin-top: -50px;
+    margin-top: -55px;
   }
 
   .social-grid {
