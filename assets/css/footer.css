@@ -2,14 +2,16 @@
 
 .sec-footer-container {
   background-color: var(--clr-primary);
-  padding: 80px;
+  padding: 80px 24px;
 }
 
 .footer-inner {
   display: flex;
+  flex-wrap: wrap;
   padding-block: 80px 40px;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .footer-logo {
@@ -65,18 +67,22 @@
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .social .email-send {
-  padding-right: 80px;
   display: flex;
-  gap: 0px;
+  flex-wrap: wrap;
+  gap: 0;
+  padding-right: 0;
+  width: min(100%, 500px);
 }
 
 .social input {
-  width: 370px;
+  width: min(370px, 100%);
   color: var(--clr-neutral-100);
   font-family: var(--font-primary);
   font-weight: 400;
@@ -89,7 +95,7 @@
 }
 
 .social .btn-send {
-  margin-right: 100px;
+  margin-right: 0;
   font-family: var(--font-primary);
   font-weight: 400;
   font-style: normal;
@@ -113,7 +119,8 @@
 
 .social-icons {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px 40px;
   float: right;
   align-items: center;
   justify-content: center;
@@ -140,4 +147,97 @@
   text-align: center;
   padding: 20px;
   margin: 0;
+}
+
+/* mobile responsive */
+
+@media screen and (max-width: 768px) {
+  .sec-footer {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .sec-footer-container {
+    padding: 38px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    padding: 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    margin: 0;
+    max-width: 100px;
+    max-height: 74px;
+  }
+
+  .footer-logo figcaption {
+    padding-top: 10px;
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .footer-links {
+    width: 350px;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    gap: 40px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+
+  .social .email-send {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social input {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 95px 5px 5px;
+    width: auto;
+  }
+
+  .social .btn-send {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+
+  .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    padding: 10px 62px;
+  }
 }
