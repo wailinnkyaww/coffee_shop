@@ -32,6 +32,7 @@ CHEF SECTION STYLE
 .sec-chef {
   /* padding-block: 60px; */
   background-color: var(--clr-neutral-100);
+  margin-top: 1px;
 }
 
 .sec-chef .chef-lead {
