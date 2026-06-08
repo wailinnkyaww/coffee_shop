@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="icon" type="image/x-icon" href="assets/img/common/logo-header.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
           <!-- <h2 class="sec-ttl">----Categories-----</h2> -->
           <p class="categories-desc">A charming neighbourhood restaurant and bar, located in the heart of
             the
-            city; a true gateway to gourmet farm-to-table dining, inspired by seasonal produce and the
+            city; a true gateway to gourmet farm-to-table dining, inspired bu seasonal produce and the
             province’s local suppliers.</p>
 
         </div>
@@ -278,7 +279,7 @@
             <div class="divider">
               <div class="line">
               </div>
-              <span class="text">ingerdients</span>
+              <span class="text">ingredients</span>
               <div class="line">
               </div>
             </div>
@@ -286,36 +287,40 @@
             <span class="ingredients-sub">Made with fresh, organic ingredients</span>
           </div>
         </div>
-
-        <div class="ingredients-slider-wrapper">
-          <div class="ingredient-card">
-            <article class="ingredient-article">
-              <div class="ingredient-img-wrap">
-                <img src="assets/img/top/img-ingredient-01.png" alt="Select coffee beans" width="300" height="225"
-                  class="ingredient-img" loading="lazy">
-              </div>
-              <h3 class="ingredient-name">Coffee Beans</h3>
-            </article>
+        <div class="ingredients">
+          <button class="nav-btn" id="prevBtn" aria-label="Previous"><i class="fas fa-caret-left"></i></button>
+          <div class="ingredients-slider-wrapper">
+            <div class="ingredient-card">
+              <article class="ingredient-article">
+                <div class="ingredient-img-wrap">
+                  <img src="assets/img/top/img-ingredient-01.png" alt="Select coffee beans" width="300" height="225"
+                    class="ingredient-img" loading="lazy">
+                </div>
+                <h3 class="ingredient-name">Coffee Beans</h3>
+              </article>
+            </div>
+            <div class="ingredient-card">
+              <article class="ingredient-article">
+                <div class="ingredient-img-wrap">
+                  <img src="assets/img/top/img-ingredient-02.png" alt="Fresh farm milk" width="300" height="225"
+                    class="ingredient-img" loading="lazy">
+                </div>
+                <h3 class="ingredient-name">Tea Leaves</h3>
+              </article>
+            </div>
+            <div class="ingredient-card">
+              <article class="ingredient-article">
+                <div class="ingredient-img-wrap">
+                  <img src="assets/img/top/img-ingredient-03.png" alt="Organic tea leaves" width="300" height="225"
+                    class="ingredient-img" loading="lazy">
+                </div>
+                <h3 class="ingredient-name">Sugar</h3>
+              </article>
+            </div>
           </div>
-          <div class="ingredient-card">
-            <article class="ingredient-article">
-              <div class="ingredient-img-wrap">
-                <img src="assets/img/top/img-ingredient-02.png" alt="Fresh farm milk" width="300" height="225"
-                  class="ingredient-img" loading="lazy">
-              </div>
-              <h3 class="ingredient-name">Tea Leaves</h3>
-            </article>
-          </div>
-          <div class="ingredient-card">
-            <article class="ingredient-article">
-              <div class="ingredient-img-wrap">
-                <img src="assets/img/top/img-ingredient-03.png" alt="Organic tea leaves" width="300" height="225"
-                  class="ingredient-img" loading="lazy">
-              </div>
-              <h3 class="ingredient-name">Sugar</h3>
-            </article>
-          </div>
-          <!-- <div class="ingredient-card">
+          <button class="nav-btn" id="nextBtn" aria-label="Next"><i class="fas fa-caret-right"></i></button>
+        </div>
+        <!-- <div class="ingredient-card">
                         <article class="ingredient-article">
                             <div class="ingredient-img-wrap">
                                 <img src="img/img-ingredient4.png" alt="Rich dark cocoa chocolate" width="300"
@@ -342,7 +347,7 @@
                             <h3 class="ingredient-name">Blueberries</h3>
                         </article>
                     </div> -->
-        </div>
+      </div>
       </div>
       </div>
     </section>
