@@ -75,26 +75,6 @@
   display: none;
 }
 
-.nav-lists .btn-order {
-  width: auto;
-  height: 45px;
-  padding: 0 24px;
-  background-color: var(--clr-primary);
-  border: none;
-  border-radius: 8px;
-  color: var(--clr-neutral-100);
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: inline-block;
-}
-
-.nav-lists .btn-order:hover {
-  background-color: var(--clr-neutral-200);
-  color: var(--clr-primary);
-}
-
 @media screen and (max-width: 768px) {
   .sec-hero {
     padding-top: 0px;
@@ -160,6 +140,7 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    gap: 0;
     top: 100%;
     left: -20px;
     width: calc(100% + 40px);
@@ -167,6 +148,7 @@
     width: 390px;
     padding: 20px;
     text-align: left;
+    margin-top: 20px;
   }
 
   .nav-lists.active .btn-order {
