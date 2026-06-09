@@ -31,7 +31,8 @@
 .sec-chef {
   /* padding-block: 60px; */
   background-color: var(--clr-neutral-100);
-  margin-top: 1px;
+  margin-top: 110px;
+  padding-top: 170px;
 }
 
 .sec-chef .chef-lead {
@@ -68,8 +69,8 @@
 }
 
 .sec-chef .chef-img-wrap img {
-  min-width: 270px;
   height: auto;
+  width: 100%;
   object-fit: cover;
   padding-top: 0px;
 }
@@ -131,8 +132,6 @@
 .sec-wrap {
   position: relative;
   max-width: 1200px;
-
-  /* margin: auto; */
   z-index: 2;
 }
 
@@ -249,10 +248,9 @@ margin-bottom: 85px;
 
 @media screen and (max-width: 768px) {
 
-  /* .sec-wrap {
-    padding: 16px 0;
-  } */
-
+ .sec-chef{
+  margin-top: 0;
+ }
   .sec-chef .sec-ttl,
   .history-wrapper .sec-ttl {
     font-size: 25px;
@@ -297,14 +295,13 @@ margin-bottom: 85px;
   .sec-chef .chef-img-wrap {
     margin-top: 0;
     padding-right: 0;
-    width: 100%;
+    width:auto;
     aspect-ratio: auto;
   }
 
   .sec-chef .chef-img-wrap img {
-    min-width: 100%;
-    width: 100%;
-    height: auto;
+    width: 165px !important;
+    height: 170px;
   }
 
   .sec-chef .chef-name {
@@ -323,7 +320,7 @@ margin-bottom: 85px;
   }
 
   .sec-history {
-    padding: 35px 0;
+    padding: 35px 20px;
   }
 
   .sec-history .sec-ttl {
