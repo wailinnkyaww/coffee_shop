@@ -20,15 +20,14 @@
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="icon" type="image/x-icon" href="assets/img/common/logo-header.png">
-  <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
   <div id="header" class="header"></div>
 
   <main>
-    <!-- Hero Section -->
     <section class="sec-hero" id="hero">
       <div class="hero-img-wrap">
         <img src="assets/img/top/bg-image.png" alt="Beautiful overhead shot of gourmet coffee and cups" width="976"
@@ -48,8 +47,6 @@
       </div>
 
     </section>
-
-    <!-- Categories Section -->
     <section class="sec-categories" id="categories">
       <div class="sec-wrap">
         <div class="categories-header">
@@ -64,8 +61,8 @@
 
             <span class="categories-sub" data-anim="fade-up" data-delay="0.4">FRESH TASTE EVERY DAY</span>
           </div>
-          <!-- <h2 class="sec-ttl">----Categories-----</h2> -->
-          <p class="categories-desc" data-anim="fade-up" data-delay="0.6">A charming neighbourhood restaurant and bar, located in the heart of
+          <p class="categories-desc" data-anim="fade-up" data-delay="0.6">A charming neighbourhood restaurant and bar,
+            located in the heart of
             the
             city; a true gateway to gourmet farm-to-table dining, inspired bu seasonal produce and the
             province’s local suppliers.</p>
@@ -141,8 +138,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Menu Section -->
     <section class="sec-menu" id="menu">
       <div class="sec-wrap">
         <div class="menu-header" data-anim="fade-up" data-delay="0.2">
@@ -202,8 +197,6 @@
               </ul>
             </div>
           </article>
-
-          <!-- Bakery Block -->
           <article class="menu-block block-bakery">
             <div class="menu-list-wrap" data-anim="fade-up" data-delay="0.8">
               <h3 class="menu-sub-ttl">Desserts</h3>
@@ -271,92 +264,68 @@
       </div>
     </section>
 
-    <!-- Ingredients Section -->
     <section class="sec-ingredients" id="ingredients">
-  <div class="sec-wrap">
-    <div class="ingredients-header">
-      <div class="ingredients-ttl">
-        <div class="divider">
-          <div class="line"></div>
-          <span class="text">ingredients</span>
-          <div class="line"></div>
+      <div class="sec-wrap">
+        <div class="ingredients-header">
+          <!-- <h2 class="sec-ttl"></h2> -->
+          <div class="ingredients-ttl">
+            <div class="divider">
+              <div class="line">
+              </div>
+              <span class="text">ingredients</span>
+              <div class="line">
+              </div>
+            </div>
+
+            <span class="ingredients-sub">Made with fresh, organic ingredients</span>
+          </div>
         </div>
-        <span class="ingredients-sub">Made with fresh, organic ingredients</span>
+        <div class="swiper ingredients">
+          <div class="ingredients-slider-wrapper swiper-wrapper">
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-01.png" alt="Select coffee beans" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Coffee Beans</h3>
+            </div>
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-02.png" alt="Fresh farm milk" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Tea Leaves</h3>
+            </div>
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-03.png" alt="Organic tea leaves" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Sugar</h3>
+            </div>
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-04.png" alt="Rich dark cocoa chocolate" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Milk</h3>
+            </div>
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-05.png" alt="Stoneground matcha powder" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Chocolate</h3>
+            </div>
+            <div class="ingredient-card swiper-slide">
+              <img src="assets/img/top/img-ingredient-06.png" alt="Fresh organic blueberries" width="300" height="225"
+                class="ingredient-img" loading="lazy">
+              <h3 class="ingredient-name">Egg</h3>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="nav-btn swiper-button-prev" id="prevBtn" aria-label="Previous"><i
+              class="fas fa-caret-left"></i></button>
+          <button class="nav-btn swiper-button-next" id="nextBtn" aria-label="Next"><i
+              class="fas fa-caret-right"></i></button>
+        </div>
       </div>
-    </div>
-
-    <div class="ingredients-carousel swiper">
-      <div class="ingredients-slider-wrapper swiper-wrapper">
-        
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-01.png" alt="Select coffee beans" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Coffee Beans</h3>
-          </article>
-        </div>
-
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-02.png" alt="Fresh farm milk" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Tea Leaves</h3>
-          </article>
-        </div>
-
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-03.png" alt="Organic tea leaves" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Sugar</h3>
-          </article>
-        </div>
-
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-04.png" alt="Rich dark cocoa chocolate" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Fine Chocolate</h3>
-          </article>
-        </div>
-
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-05.png" alt="Stoneground matcha powder" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Uji Matcha</h3>
-          </article>
-        </div>
-
-        <div class="ingredient-card swiper-slide">
-          <article class="ingredient-article">
-            <div class="ingredient-img-wrap">
-              <img src="assets/img/top/img-ingredient-06.png" alt="Fresh organic blueberries" width="300" height="225" class="ingredient-img" loading="lazy">
-            </div>
-            <h3 class="ingredient-name">Blueberries</h3>
-          </article>
-        </div>
-
-      </div>
-      <div class="carousel-pagination swiper-pagination"></div>
-    </div>
-  </div>
-</section>
+    </section>
   </main>
   <div id="footer" class="footer"></div>
-
-  <script
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
   <script src="assets/js/common.js"></script>
   <script src="assets/js/index.js"></script>
 </body>
