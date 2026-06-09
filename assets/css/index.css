@@ -1,7 +1,4 @@
 @charset 'utf-8';
-@import "./common.css";
-@import "./header.css";
-@import "./footer.css";
 
 a {
   text-decoration: none;

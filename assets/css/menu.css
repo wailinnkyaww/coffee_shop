@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import "./common.css";
 
 .layout-width-shared {
@@ -88,9 +88,12 @@
   padding-top: 23px;
 }
 
-.special-card.layout-inverted {
+/* .special-card.layout-inverted {
   flex-direction: column-reverse;
-}
+} */
+ /* .card-reverse {
+  flex-direction: column-reverse;
+ } */
 
 .special-title {
   padding-inline: auto;
