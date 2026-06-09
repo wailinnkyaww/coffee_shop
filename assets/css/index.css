@@ -68,18 +68,20 @@ img {
 }
 
 .sec-hero .hero-inner {
+  /* position: relative; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 40px;
   padding-block: 80px;
 }
 
 .sec-hero .hero-content {
   flex: 1;
-  max-width: 600px;
+  max-width: 100%;
   position: relative;
   z-index: 2;
+  /* margin-right: 500px; */
 }
 
 .sec-hero .hero-title {
@@ -517,7 +519,7 @@ img {
 
 .sec-ingredients .ingredient-img {
   width: 100%;
-  max-width: 400px;
+  /* max-width: 400px; */
   height: 100%;
   object-fit: cover;
 }
@@ -907,6 +909,10 @@ img {
 
   .sec-ingredients .ingredients-header {
     margin-bottom: 50px;
+  }
+
+  .sec-ingredients .ingredient-img {
+    max-width: 200px;
   }
 
 }
