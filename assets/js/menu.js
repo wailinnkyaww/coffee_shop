@@ -66,41 +66,41 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menu Tabs Section Entry Fade-Up Timeline
   const menuTabsTl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.sec-menu',
+      trigger: '.menu-section',
       start: 'top 80%',
       toggleActions: 'play none none none'
     }
   });
 
-  menuTabsTl.from('.sec-menu .menu-sub-ttl, .sec-menu .sec-ttl', {
-    y: 40,
+  menuTabsTl.from('.menu-section .second-special-menu, .menu-section .menu-main-heading', {
+    y: 50,
     opacity: 0,
     duration: 0.8,
     stagger: 0.2,
     ease: 'power2.out'
   })
-    .from('.sec-menu .menu-tabs .tab-btn', {
-      y: 20,
+    .from('.menu-section .menu-tabs .tab-btn', {
+      y: 30,
       opacity: 0,
       duration: 0.6,
       stagger: 0.1,
       ease: 'power2.out'
     }, '-=0.3')
-    .from('.sec-menu .menu-showcase img', {
+    .from('.menu-section .menu-image-wrapper img', {
       y: 50,
       opacity: 0,
       duration: 0.9,
-      ease: 'power3.out'
+      ease: 'power2.out'
     }, '-=0.2')
     // Targets each menu element with data-anim="fade-up" cascading sequentially with a 0.2s delay step
-    .from('.sec-menu .menu-list .menu-item[data-anim="fade-up"]', {
+    .from('.menu-section .menu-list .menu-item[data-anim="fade-up"]', {
       y: 30,
       opacity: 0,
       duration: 0.6,
       stagger: 0.2,
       ease: 'power2.out'
     }, '-=0.6') // Starts animating smoothly as the showcase picture settles into place
-    .from('.sec-menu .menu-action', {
+    .from('.menu-section .center-btn-wrapper', {
       y: 30,
       opacity: 0,
       duration: 0.6,
@@ -111,19 +111,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // BellaCrema Banner Section Entry Fade-Up
   const bannerTl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.sec-banner',
+      trigger: '.promo-section',
       start: 'top 85%',
       toggleActions: 'play none none none'
     }
   });
 
-  bannerTl.from('.sec-banner .banner-media img', {
-    y: 60,
+  bannerTl.from('.promo-section .promo-img-holder img', {
+    y: 50,
     opacity: 0,
     duration: 1,
-    ease: 'power3.out'
+    ease: 'power2.out'
   })
-    .from('.sec-banner .banner-content > *', {
+    .from('.promo-section .promo-content-holder > *', {
       y: 30,
       opacity: 0,
       duration: 0.8,
