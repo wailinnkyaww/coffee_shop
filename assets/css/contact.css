@@ -17,7 +17,7 @@ h1 {
 }
 
 /* - SECTION GENERAL STYLES - */
-.sec-contact{
+.sec-contact {
   padding-block: 180px;
 }
 
@@ -73,7 +73,7 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   font-family: var(--font-sans);
- 
+
 }
 
 .btn-primary:hover {
@@ -213,6 +213,7 @@ h1 {
 .sec-message {
   padding-block: 95px;
 }
+
 .message-title-wrapper {
   display: flex;
   align-items: center;
@@ -318,7 +319,7 @@ h1 {
   font-weight: 700;
   color: #111111;
   text-align: center;
-   margin-top: -55px; 
+  margin-top: -55px;
 }
 
 .social-grid {
@@ -326,7 +327,7 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 55px 110px;
   max-width: 1015px;
-  padding-top: 60px; 
+  padding-top: 60px;
 
 }
 
@@ -545,7 +546,7 @@ h1 {
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-  
+
   }
 }
 
@@ -834,7 +835,7 @@ h1 {
   .title-line {
     width: 55px;
     flex-shrink: 0;
-   
+
   }
 
   .sect-ttl {
@@ -847,9 +848,9 @@ h1 {
   }
 
 
-.sec-message {
-  padding-block: 50px;
-}
+  .sec-message {
+    padding-block: 50px;
+  }
 
   .form-desc {
     font-size: 14px;
@@ -916,7 +917,7 @@ h1 {
 
   .social-img-icon {
     width: 100%;
-    
+
   }
 
   .social-handle {
