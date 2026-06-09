@@ -631,6 +631,10 @@ img {
     width: 100%;
   }
 
+  .sec-ingredients .ingredients-slider-wrapper {
+    padding-inline: 40px;
+  }
+
   .sec-ads .ads-inner {
     display: flex;
     gap: 20px;
@@ -722,6 +726,10 @@ img {
     font-size: 25px;
     width: auto;
     padding-left: 10px;
+  }
+
+  .sec-ingredients .ingredients-slider-wrapper {
+    padding-inline: 20px;
   }
 }
 
@@ -878,6 +886,10 @@ img {
 
   .sec-ingredients {
     padding-block: 35px;
+  }
+
+  .sec-ingredients .ingredients-slider-wrapper {
+    padding-inline: 20px;
   }
 
   .ingredients-sub {

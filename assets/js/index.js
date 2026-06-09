@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Swiper for Ingredients Carousel
+
+ // Initialize Swiper for Ingredients Carousel
 const ingredientsSwiper = new Swiper('.sec-ingredients .ingredients-carousel', {
   slidesPerView: 1,
   spaceBetween: 20,
