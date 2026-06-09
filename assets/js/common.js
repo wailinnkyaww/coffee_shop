@@ -17,10 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('header').innerHTML = headerHtml;
             document.getElementById('footer').innerHTML = footerHtml;
 
+            setupActiveLink();
             setupHamburger();
         } catch (error) {
             console.error('Error loading page components:', error);
         }
+    }
+
+    function setupActiveLink() {
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-lists a');
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href) {
+                const pageName = href.substring(href.lastIndexOf('/') + 1);
+                const currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
+
+                if (currentPage === pageName || 
+                    ((currentPage === '' || currentPage === 'index.html') && pageName === 'index.html')) {
+                    link.classList.add('active');
+                }
+            }
+        });
     }
 
     function setupHamburger() {
@@ -37,3 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadComponents();
 });
+

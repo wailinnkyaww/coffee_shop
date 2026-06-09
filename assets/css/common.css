@@ -16,7 +16,7 @@
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: #e3e3e3;
   --clr-neutral-900: #000000;
-
+  --clr-neutral-300:#313131;
   --clr-primary: #562e19;
   --clr-primary-500: #bf662f;
   --clr-secondary: #c67c4e;
@@ -32,10 +32,23 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: var(--font-primary);
   background-color: var(--clr-neutral-100);
   color: var(--clr-neutral-900);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .sec-wrap {
@@ -46,13 +59,29 @@ body {
   margin-inline: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .sec-wrap {
-    --padding: 40px;
+    width: 100%;
+    max-width: 100%;
+    --padding: 0;
   }
 }
 
-/* Screen reader only utility class for accessibility */
+@media screen and (max-width: 768px) {
+  .sec-wrap {
+    max-width: 768px;
+    --padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sec-wrap {
+    width: 100%;
+    max-width: 100%;
+    --padding: 15px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
