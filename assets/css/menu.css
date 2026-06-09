@@ -6,7 +6,9 @@
   width: 100%;
   margin: 0 auto;
 }
-
+.special-section{
+  margin-top:110px;
+}
 .section-divider {
    max-width: 1376px;
   display: flex;
@@ -34,7 +36,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin: 38px auto;
+  margin: 30px auto;
   max-width: 100%;
 }
 
@@ -82,10 +84,11 @@
 
 .special-card:nth-child(2) .special-title {
   padding-top: 0px;
+  line-height: 1.2;
 }
 
 .special-card:nth-child(2) .special-img {
-  padding-top: 23px;
+  padding-top: 45px;
 }
 
 .special-card.layout-inverted {
@@ -115,7 +118,7 @@
 
 .second-special-menu {
   max-width: 343px;
-  padding-top: 60px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,13 +298,12 @@
 .promo-img-holder {
   flex-shrink: 0;
   position: relative;
-  /* Pulls the image upward to break past the card's top border precisely like the mockup */
   margin-bottom: -35px;
 }
 
 .promo-bag-img {
 max-width:317px;
-transform: translateY(-90px);
+transform: translateY(-95px);
   filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -326,7 +328,7 @@ transform: translateY(-90px);
 }
 
 .brand-subtitle {
-  padding-top:5px;
+  padding-top:-15px;
  padding-right:8px;
   font-family:var(--font-primary);
   font-size:35px;
@@ -337,7 +339,7 @@ transform: translateY(-90px);
 }
 
 .brand-description {
-  padding-top:15px;
+  padding-top:0px;
   font-size:30px;
   color:var(--clr-neutral-900);
   font-family: var(--font-primary);
@@ -388,10 +390,8 @@ transform: translateY(-90px);
     font-size:20px;
     line-height:1.5;
   }
-
   .special-card:nth-child(2) {
     display: flex;
-    /* flex-direction: column-reverse; */
   }
 
   .special-card .special-img {
@@ -406,7 +406,7 @@ transform: translateY(-90px);
     padding-bottom: 15px; 
   }
   .special-card:nth-child(2) .special-title {
-    /* order:-2; */
+   
     order:1;
     padding-top: 15px;
     margin: 0;
@@ -414,12 +414,10 @@ transform: translateY(-90px);
   }
 
   .special-card:nth-child(2) .special-img{
-     /* order:-1; */
      order:3;
 
   }
   .special-card:nth-child(2) .special-desc {
-    /* order:-3; */
     order: 3;
     padding-top: 15px;
     font-size:20px;
@@ -474,7 +472,6 @@ transform: translateY(-90px);
 
   .special-card:nth-child(2) {
     display: flex;
-    /* flex-direction: column-reverse; */
   }
 
   .special-card .special-img {
@@ -488,7 +485,6 @@ transform: translateY(-90px);
     padding-bottom: 10px; 
   }
   .special-card:nth-child(2) .special-title {
-    /* order:-2; */
     order:1;
     padding-top: 15px;
     margin: 0;
@@ -496,12 +492,10 @@ transform: translateY(-90px);
   }
 
   .special-card:nth-child(2) .special-img{
-     /* order:-1; */
      order:3;
 
   }
   .special-card:nth-child(2) .special-desc {
-    /* order:-3; */
     order: 3;
     padding-top: 15px;
     font-size:18px;
@@ -722,50 +716,6 @@ transform: translateY(-90px);
     margin: 0 5px;
   }
 
-  /* .promo-section {
-    margin-top: 60px;
-    padding-inline: 15px;
-  }
-
-  .promo-banner-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 25px 20px;
-    gap: 20px;
-  }
-
-  .promo-img-holder {
-    margin-bottom: 0;
-  }
-
-  .promo-bag-img {
-    max-width: 150px;
-    transform: translateY(0); 
-  }
-
-  .promo-content-holder {
-    align-items: center;
-    text-align: center;
-    padding-top: 0;
-  }
-
-  .brand-title {
-    font-size: 32px;
-    margin-top: 0;
-    padding-right: 0;
-  }
-
-  .brand-subtitle {
-    font-size: 20px;
-    padding-right: 0;
-  }
-
-  .brand-description {
-    font-size: 15px;
-    max-width: 100%;
-    line-height: 1.5;
-  } */
 
    .promo-section {
     margin-top: 100px; 
