@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 .sec-ttl {
   display: flex;
@@ -49,8 +49,6 @@
 
 .sec-chef .chef-list {
   display: flex;
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* Mobile layout 2 columns based on image */
   gap: 25px;
 }
 
@@ -103,31 +101,12 @@
   overflow: hidden;
 }
 
-/* .sec-ttl::before,
-.sec-ttl::after {
-  display: inline-block;
-  content: "";
-  width: 100px;
-  height: 1px;
-  text-align: center;
-  background-color: var(--clr-primary);
-} */
-
 .sec-chef {
   background-color: var(--clr-neutral-100);
   padding-top: 60px;
   padding-bottom: 74px;
 }
 
-.history-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr-seconsary);
-  z-index: 1;
-}
 
 .sec-wrap {
   position: relative;
@@ -136,29 +115,14 @@
 }
 
 
-/* .sec-history .sec-history-ttl {
-font-size: 36px;
-font-weight: 700;
-text-transform: lowercase;
-text-align: center;
-color: var(--clr-secondary);
-margin-bottom: 85px;
-} */
-
 .history-timeline {
   display: flex;
   position: relative;
   flex-direction: column;
-  /* gap: 60px; */
   margin-top: 90px;
   margin-right: 15px;
 }
 
-.timeline-line {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
 
 .timeline-line::before {
   position: absolute;
