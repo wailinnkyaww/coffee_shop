@@ -1,13 +1,13 @@
 @charset 'utf-8';
 
-.sec-chef .sec-ttl {
+.sec-ttl {
   display: flex;
   position: relative;
   padding-top: 20px;
   font-family: var(--font-primary);
   font-size: 35px;
   font-weight: 800;
-  color: var(--clr-primary);
+  color: var(--clr-secondary);
   text-align: center;
   line-height: 45px;
   text-transform: lowercase;
@@ -23,15 +23,16 @@
   content: "";
   width: 100px;
   height: 1px;
+  text-align: center;
+  color: var(--clr-secondary);
   background-color: var(--clr-primary);
 }
 
-/* ==========================================
-CHEF SECTION STYLE
-========================================== */
 .sec-chef {
   /* padding-block: 60px; */
   background-color: var(--clr-neutral-100);
+  margin-top: 110px;
+  padding-top: 170px;
 }
 
 .sec-chef .chef-lead {
@@ -54,7 +55,7 @@ CHEF SECTION STYLE
 }
 
 .sec-chef .chef-card {
-  background-color: var(--clr-background);
+  background-color: var(--clr-seconsary);
   text-align: center;
   margin-bottom: 15px;
 }
@@ -68,15 +69,16 @@ CHEF SECTION STYLE
 }
 
 .sec-chef .chef-img-wrap img {
-  min-width: 270px;
   height: auto;
+  width: 100%;
   object-fit: cover;
+  padding-top: 0px;
 }
 
 .sec-chef .chef-name {
   font-size: 20px;
   font-family: var(--font-primary);
-  color: var(--clr-neutral-900);
+  background-color: var(--clr-seconsary);
   font-weight: 700;
   margin-bottom: 5px;
   margin-right: 15px;
@@ -84,47 +86,32 @@ CHEF SECTION STYLE
 
 .sec-chef .chef-role {
   font-size: 20px;
-  color: var(--clr-text-muted);
+  background-color: var(--clr-seconsary);
   font-weight: 400;
   line-height: 35px;
   font-family: var(--font-primary);
   margin-right: 10px;
 }
 
-/* ==========================================================================
-1. Section & Background Setup
-========================================================================== */
 .sec-history {
   position: relative;
   width: 100%;
-  padding: 100px 0;
-  background-color: var(--clr-neutral-100);
-  /* Fallback warm cream background */
-  /* Replace with your actual coffee bean pattern image path */
-  background-image: url('../images/coffee-bean-pattern.png');
+  padding: 60px 0;
+  background-image: url('../img/about/bg-chef-history.png');
   background-repeat: repeat;
   background-position: center;
   overflow: hidden;
 }
 
-.history-wrapper {
-  display: flex;
-  max-width: 500px;
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-inline: auto;
-}
-
-.sec-ttl::before,
+/* .sec-ttl::before,
 .sec-ttl::after {
   display: inline-block;
   content: "";
   width: 100px;
   height: 1px;
+  text-align: center;
   background-color: var(--clr-primary);
-}
+} */
 
 .sec-chef {
   background-color: var(--clr-neutral-100);
@@ -132,7 +119,6 @@ CHEF SECTION STYLE
   padding-bottom: 74px;
 }
 
-/* Subtle overlay to soften the background pattern if needed */
 .history-overlay {
   position: absolute;
   top: 0;
@@ -146,10 +132,9 @@ CHEF SECTION STYLE
 .sec-wrap {
   position: relative;
   max-width: 1200px;
-  /* margin: auto; */
   z-index: 2;
-  /* Sits above the background overlay */
 }
+
 
 /* .sec-history .sec-history-ttl {
 font-size: 36px;
@@ -160,10 +145,6 @@ color: var(--clr-secondary);
 margin-bottom: 85px;
 } */
 
-/* ==========================================================================
-2. Timeline Layout (Desktop / >768px)
-========================================================================== */
-
 .history-timeline {
   display: flex;
   position: relative;
@@ -171,58 +152,52 @@ margin-bottom: 85px;
   /* gap: 60px; */
   margin-top: 90px;
   margin-right: 15px;
-  /* Space between timeline nodes */
 }
 
-.timeline-line{
-  position: relative;
+.timeline-line {
   display: flex;
+  position: relative;
   flex-direction: column;
-} 
+}
 
-.timeline-line::before{
-  content: "";
+.timeline-line::before {
   position: absolute;
-  left: 50%;
   top: 0;
   bottom: 0;
-  width: 2px; 
+  left: 50%;
+  content: "";
+  width: 2px;
   transform: translateX(-50%) scaleY(0);
   transform-origin: top;
   transition: treansform 1s ease-in-out;
   will-change: transform;
   /* background-color: var; */
-} 
+}
 
-/* Central vertical spine line */
 .timeline-line {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50.7%;
   width: 2px;
-  background-color: #222222;
+  background-color: var(--clr-neutral-900);
   transform: translateX(-50%);
 }
 
-/* Timeline Rows configuration */
 .timeline-row {
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr;
-  /* Split into two halves */
   max-width: 1200px;
   width: 100%;
 }
 
-/* Content wrapper sizing and alignment */
 .timeline-content {
   width: 100%;
   max-width: 553px;
   box-sizing: border-box;
 }
 
-/* Left-side row specific rules */
 .timeline-row.row-left {
   text-align: left;
   padding: 10px 40px;
@@ -230,12 +205,9 @@ margin-bottom: 85px;
 
 .timeline-row.row-left .timeline-content {
   grid-column: 1;
-  /* Force into left column */
-  /* justify-self: end; */
   padding-right: 50px;
 }
 
-/* Right-side row specific rules */
 .timeline-row.row-right {
   text-align: left;
   padding: 10px 40px;
@@ -243,18 +215,16 @@ margin-bottom: 85px;
 
 .timeline-row.row-right .timeline-content {
   grid-column: 2;
-  /* Force into right column */
   justify-self: start;
   padding-left: 50px;
 }
 
-/* Typography styles inside content blocks */
 .timeline-year {
   display: block;
   font-size: 35px;
   font-family: var(--font-primary);
   font-weight: 800;
-  color: #222222;
+  color: var(--clr-neutral-900);
   line-height: 1;
   margin-bottom: 10px;
 }
@@ -262,10 +232,10 @@ margin-bottom: 85px;
 .timeline-title {
   font-size: 20px;
   font-weight: 600;
-  color: #c47a46;
+  color: var();
   margin-bottom: 15px;
   margin-top: 19px;
-
+  color: var(--clr-secondary);
 }
 
 .timeline-desc {
@@ -273,146 +243,141 @@ margin-bottom: 85px;
   line-height: 1.6;
   font-family: var(--font-primary);
   font-weight: 400;
-  color: #4a4a4a;
+  color: var(--clr-neutral-900);
 }
 
-
-
-/* ==========================================================================
- 3. Mobile Responsive Viewport (<768px)
- ========================================================================== */
 @media screen and (max-width: 768px) {
-  .sec-history {
-    padding: 60px 0;
+
+ .sec-chef{
+  margin-top: 0;
+ }
+  .sec-chef .sec-ttl,
+  .history-wrapper .sec-ttl {
+    font-size: 25px;
+    line-height: 37px;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: var(--clr-secondary);
   }
 
-  .sec-ttl {
-    font-size: 28px;
-    margin-bottom: 50px;
+  .sec-ttl::before,
+  .sec-ttl::after {
+    width: 35px;
+    height: 1px;
+    color: var(--clr-secondary);
+  }
+
+  .sec-chef {
+    padding-top: 24px;
+    padding-bottom: 35px;
+  }
+
+  .sec-chef .chef-lead {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    padding-inline: 4px;
+  }
+
+  .sec-chef .chef-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .sec-chef .chef-card {
+    margin-bottom: 0;
+    padding-bottom: 12px;
+    background-color: #faf4ee;
+    border-radius: 2px;
+  }
+
+  .sec-chef .chef-img-wrap {
+    margin-top: 0;
+    padding-right: 0;
+    width:auto;
+    aspect-ratio: auto;
+  }
+
+  .sec-chef .chef-img-wrap img {
+    width: 165px !important;
+    height: 170px;
+  }
+
+  .sec-chef .chef-name {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 0;
+    margin-top: 10px;
+    padding-inline: 4px;
+  }
+
+  .sec-chef .chef-role {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-right: 0;
+    padding-inline: 4px;
+  }
+
+  .sec-history {
+    padding: 35px 20px;
+  }
+
+  .sec-history .sec-ttl {
+    color: var(--clr-secondary);
+    font-size: 25px;
+    line-height: 37px;
   }
 
   .history-timeline {
-    gap: 40px;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 0;
   }
 
-  /* Shift the spine line to the far left side */
-  .timeline-line {
-    left: 20px;
-    transform: none;
+  .timeline-line,
+  .timeline-line::before {
+    display: none;
+    content: none;
   }
 
-  /* Reset grid rows into a simple single column */
   .timeline-row {
-    grid-template-columns: 1fr;
-    text-align: left !important;
-    /* Force all text to align left */
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-left: 2.5px solid #222222;
+    padding: 15px !important;
   }
 
-  /* Unify both left and right block placements */
+  .timeline-row .row-left,
+  .timeline-row .row-right {
+    text-align: left;
+    padding: 10px;
+  }
+
   .timeline-row.row-left .timeline-content,
   .timeline-row.row-right .timeline-content {
-    grid-column: 1;
-    justify-self: start;
-    padding-left: 50px;
-    /* Leave space for the spine line on the left */
-    padding-right: 0;
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  /* Compact typography sizes optimized for small screens */
   .timeline-year {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 22px;
+    margin-bottom: 4px;
   }
 
   .timeline-title {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--clr-secondary);
+    margin-top: 4px;
+    margin-bottom: 8px;
+    padding-top: 10px;
   }
 
   .timeline-desc {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-}
-
-[data-anim="fade-up"] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
-    transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-[data-anim="fade-up"].is-animated {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Base Fade In (For Hero texts/buttons) */
-[data-anim="fade-in"] {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-
-[data-anim="fade-in"].is-animated {
-  opacity: 1;
-}
-
-/* Hero Image Slide from Left */
-[data-anim="slide-left"] {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1),
-    transform 1s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-[data-anim="slide-left"].is-animated {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Header Drop Down */
-[data-anim="drop-down"] {
-  opacity: 0;
-  transform: translateY(-50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-[data-anim="drop-down"].is-animated {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ==========================================
- SPECIAL ANIMATIONS (History Line & Spinning Cup)
- ========================================== */
-
-/* History Center Line Animation */
-.sec-history .timeline-line {
-  display: block;
-  /* Desktop မှာ ဖော်ပေးဖို */
-  height: 0%;
-  /* စစချင်းမှာ အမြင့် ၀ ဖြစ်နေမယ် */
-  transition: height 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sec-history.is-animated .timeline-line {
-  height: 100%;
-  /* Section ထဲရောက်တာနဲ့ အပေါ်ကနေ အောက်ကို တန်းကျလာမယ် */
-}
-
-/* Spinning Coffee Cup Constant Rotation */
-.spinning-cup {
-  animation: spin 15s linear infinite;
-  transform-origin: center;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
+    font-size: 13.5px;
+    line-height: 1.6;
   }
 }
