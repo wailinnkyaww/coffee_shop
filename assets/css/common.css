@@ -21,6 +21,7 @@
   --clr-primary-500: #bf662f;
   --clr-secondary: #c67c4e;
   --clr-secondary-500: #f9f2ed;
+  --clr-secondary-light: #FFD8C0;
 
   --font-primary: "Sora", sans-serif;
   --font-secondary: "Spectral SC", serif;
@@ -101,7 +102,7 @@ svg {
     padding: 5px 10px;
     color: var(--clr-neutral-100);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--clr-primary);
     font-family: var(--font-primary);
     font-weight: 400;
