@@ -161,16 +161,17 @@
     text-align: center;
   }
 
+
   .footer-logo {
-    width: 350px;
     margin: 0 auto;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 0px;
+    padding: 0;
+    margin: 0;
   }
 
   .footer-logo img {
     margin: 0;
+    padding: 0;
     max-width: 100px;
     max-height: 74px;
   }
@@ -182,9 +183,10 @@
   }
 
   .footer-links {
-    width: 350px;
+    width: auto;
+    margin: 0;
+    padding: 0;
     gap: 15px;
-    margin-left: 0;
   }
 
   .nav-links {
