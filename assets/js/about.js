@@ -1,38 +1,85 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Pa  // ၁။ animElements ကို အရင်ဖမ်းပေးရပါမယ် (ကျန်ခဲ့တာ ဖြည့်ထားပေးတယ်)
-    const animElements = document.querySelectorAll('[data-anim]');
+  // Register GSAP ScrollTrigger plugin framework
+  gsap.registerPlugin(ScrollTrigger);
 
-    // ၂။ စာလုံးပေါင်း ပြင်ထားပါတယ် (observerOptions)
-    const observerOptions = {
-        root: null,
-        rootMargin: "0px 0px -10% 0px",
-        threshold: 0.1
-    };
+  // Header / Navigation Master Entry Timeline
+  const headerTl = gsap.timeline();
+  
+  headerTl.from('.header', {
+    y: -100,
+    opacity: 0,
+    duration: 0.8,
+    ease: 'power2.out'
+  });
 
-    const animObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // ၃။ .ad ကို .add ဟု ပြင်ထားပါတယ်
-                entry.target.classList.add('is-animated');
-                observer.unobserve(entry.target); // တစ်ခါပဲ Run မယ်
-            }
-        });
-    }, observerOptions);
-
-    animElements.forEach(el => animObserver.observe(el));
-
-    // --- 2. SPECIAL: HISTORY SECTION TIMELINE LINE ANIMATION ---
-    const historySection = document.querySelector('.sec-history');
-    if (historySection) {
-        const historyObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-animated');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { rootMargin: "0px 0px -20% 0px" });
-
-        historyObserver.observe(historySection);
+  // Chef Section
+  const chefTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.sec-chef',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
     }
+  });
+
+  
+  chefTl.from('.sec-chef [data-anim="fade-up"]:not(.chef-card)', {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: 'power2.out'
+  })
+  .from('.sec-chef .chef-card[data-anim="fade-up"]', {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: 'power2.out'
+  }, '-=0.2');
+
+  // Chronological History Timeline Tracking Engine
+  const historyTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.sec-history',
+      start: 'top 75%',
+      toggleActions: 'play none none none'
+    }
+  });
+
+  
+  historyTl.from('.sec-history .sec-ttl[data-anim="fade-up"]', {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    ease: 'power2.out'
+  })
+  
+  .from('.sec-history .history-timeline[data-anim="fade-up"]', {
+    y: 50,
+    opacity: 0,
+    duration: 0.9,
+    ease: 'power2.out'
+  }, '-=0.3')
+
+  .from('.sec-history .timeline-row', {
+    y: 50,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.3,
+    ease: 'power2.out'
+  }, '-=0.4');
+
+
+ // Global Site Footer Component Entry Fade-Up
+  gsap.from('.footer', {
+    scrollTrigger: {
+      trigger: '.footer',
+      start: 'top 90%',
+      toggleActions: 'play none none none'
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: 'power2.out'
+  });
 });
