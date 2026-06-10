@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     breakpoints: {
       480: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 30
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 20
       }
     }
   });
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Infinite rotational transformation isolated from structural scroll-triggers
-  gsap.to('.sec-ads .ads-img-wrap img', {
+  gsap.to('.banner-cup img ', {
     rotation: 360,
     duration: 10,
     repeat: -1,
