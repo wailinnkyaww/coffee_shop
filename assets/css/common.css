@@ -98,7 +98,7 @@ svg {
   /* Common/global elements */
   .btn-primary {
     height: 30px;
-    width: 120px;
+    width: auto;
     padding: 5px 10px;
     color: var(--clr-neutral-100);
     border: none;
