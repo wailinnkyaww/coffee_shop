@@ -58,7 +58,7 @@
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,7 +172,7 @@
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 768px) {
   .header {
     width: 100%;
     padding: 10px 12px;
@@ -216,7 +216,7 @@
     font-size: 18px;
     font-weight: 500;
     color: var(--clr-neutral-900);
-    border-bottom: 1px solid rgba(198, 124, 78, 0.15);
+    border-bottom: 0.1px solid var(--clr-secondary-light);
     text-align: left;
     transition: background-color 0.2s ease, color 0.2s ease;
     text-decoration: none;
