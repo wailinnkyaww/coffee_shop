@@ -48,7 +48,7 @@
 
 .nav-lists a:hover,
 .nav-lists a.active {
-  color: var(--clr-primary);
+  color: var(--clr-secondary);
 }
 
 .nav-lists a::after {

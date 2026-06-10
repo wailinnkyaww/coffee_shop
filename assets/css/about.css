@@ -188,14 +188,14 @@
   font-size: 35px;
   font-family: var(--font-primary);
   font-weight: 800;
-  color: var(--clr-neutral-900);
+  color: var(--clr-neutral-300);
   line-height: 1;
   margin-bottom: 10px;
 }
 
 .timeline-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var();
   margin-bottom: 15px;
   margin-top: 19px;
@@ -207,14 +207,15 @@
   line-height: 1.6;
   font-family: var(--font-primary);
   font-weight: 400;
-  color: var(--clr-neutral-900);
+  color: var(--clr-neutral-300);
 }
 
 @media screen and (max-width: 768px) {
 
- .sec-chef{
-  margin-top: 0;
- }
+  .sec-chef {
+    margin-top: 0;
+  }
+
   .sec-chef .sec-ttl,
   .history-wrapper .sec-ttl {
     font-size: 25px;
@@ -259,7 +260,7 @@
   .sec-chef .chef-img-wrap {
     margin-top: 0;
     padding-right: 0;
-    width:auto;
+    width: auto;
     aspect-ratio: auto;
   }
 
