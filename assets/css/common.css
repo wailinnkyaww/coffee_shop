@@ -99,6 +99,7 @@ svg {
   .btn-primary {
     height: 30px;
     width: auto;
+    width: auto;
     padding: 5px 10px;
     color: var(--clr-neutral-100);
     border: none;
