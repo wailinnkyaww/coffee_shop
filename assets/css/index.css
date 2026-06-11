@@ -155,24 +155,6 @@ img {
   margin-bottom: 10px;
 }
 
-.nav-btn {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  border: none;
-  background: transparent;
-  color: #C67C4E;
-  font-size: 3.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  padding: 0 10px;
-  box-shadow: none;
-  z-index: 15;
-}
-
 .sec-categories .sec-ttl {
   margin-bottom: 30px;
   position: relative;
@@ -321,24 +303,6 @@ img {
   gap: 40px;
 }
 
-.nav-btn {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  border: none;
-  background: transparent;
-  color: #C67C4E;
-  font-size: 3.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  padding: 0 10px;
-  box-shadow: none;
-  z-index: 15;
-}
-
 .ingredients {
   display: flex;
   align-items: center;
@@ -403,56 +367,10 @@ img {
   overflow: visible;
 }
 
-/* .sec-ads .ads-bg-bar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 150px;
-  background-color: var(--clr-primary);
-  z-index: 1;
-} */
-
 .sec-ads .sec-wrap {
   position: relative;
   z-index: 2;
 }
-
-/* .sec-ads .ads-inner {
-  display: flex;
-  align-items: center;
-  /* justify-content: flex-start; */
-/* ; 
-  gap: 80px;
-  /* padding-inline: 0px; */
-/* margin-inline: auto; 
-}
-
-.sec-ads .ads-title {
-  font-family: var(--font-primary);
-  font-size: 2.8125rem;
-  /* 45px 
-  font-weight: 400;
-  padding-right: 70px;
-  color: var(--clr-neutral-100);
-  white-space: nowrap;
-}
-
-.sec-ads .ads-img-wrap {
-  width: 250px;
-  height: 249px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  animation: floatAnim 6s ease-in-out infinite;
-}
-
-.sec-ads .ads-img {
-  width: 100%;
-  height: 100%;
-  /* padding-left: 20px; 
-  object-fit: cover;
-} */
 
 /* Ingredients Section */
 .sec-ingredients {
@@ -473,7 +391,7 @@ img {
   border-radius: 0;
   border: none;
   background: transparent;
-  color: #C67C4E !important;
+  color: var(--clr-secondary) !important;
   font-size: 3.5rem;
   cursor: pointer;
   display: flex;
