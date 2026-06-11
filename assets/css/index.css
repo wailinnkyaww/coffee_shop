@@ -34,7 +34,10 @@ img {
   line-height: 100%;
   font-weight: 800;
   text-align: center;
-  color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+
+color: var(--clr-secondary);
 }
 
 
