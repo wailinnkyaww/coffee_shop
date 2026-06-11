@@ -25,7 +25,7 @@ img {
   flex: 0 0 100px;
   width: 80px;
   height: 2px;
-  background-color: #c99a80;
+  background-color: var(--clr-secondary);
 }
 
 .text {
@@ -34,7 +34,7 @@ img {
   line-height: 100%;
   font-weight: 800;
   text-align: center;
-  color: var(--clr-primary);
+  color: var(--clr-secondary);
 }
 
 
