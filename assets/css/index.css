@@ -37,9 +37,6 @@ img {
   color: var(--clr-primary);
 }
 
-color: var(--clr-secondary);
-}
-
 
 .btn-primary:focus-visible {
   outline: 2px solid var(--clr-secondary);
