@@ -278,7 +278,7 @@
 
 .promo-banner-card {
   max-width: 100%;
-  border: 1px solid #d9c5b4;
+  border: 1px solid var(--clr-secondary);
   border-radius: 14px;
   padding: 20px 37px;
   background-color: #fcf6f0;
@@ -705,6 +705,8 @@
     line-height: 1.5;
     margin-inline: 15px;
   }
+
+  margin-inline: 10px;
 }
 
 .second-menu {
@@ -805,6 +807,8 @@
   margin-left: auto;
   line-height: 1.4;
   font-size: 14px;
+
+}
 
 }
 
