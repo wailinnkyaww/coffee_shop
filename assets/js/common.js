@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const pageName = href.substring(href.lastIndexOf('/') + 1);
                 const currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
-                if (currentPage === pageName || 
+                if (currentPage === pageName ||
                     ((currentPage === '' || currentPage === 'index.html') && pageName === 'index.html')) {
                     link.classList.add('active');
                 }
