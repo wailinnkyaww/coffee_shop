@@ -12,7 +12,6 @@ h1 {
   margin-inline: auto;
 }
 
-/* - SECTION GENERAL STYLES - */
 .sec-contact {
   padding-block: 180px;
 }
@@ -55,7 +54,6 @@ h1 {
 .center-btn {
   text-align: center;
   margin-top: 40px;
-
 }
 
 .contact-map-grid {
@@ -73,7 +71,6 @@ h1 {
   flex-direction: column;
   gap: 55px;
   margin-top: -20px;
-
 }
 
 .contact-box {
@@ -81,7 +78,6 @@ h1 {
   flex-direction: column;
   gap: 20px;
   padding-left: 10px;
-
 }
 
 .contact-box h3 {
@@ -89,7 +85,6 @@ h1 {
   font-size: 30px;
   color: var(--clr-neutral-900);
   font-weight: 400;
-
 }
 
 .contact-box p {
@@ -109,11 +104,9 @@ h1 {
 .contact-map-container {
   padding: 10px;
   max-width: 450px;
-
 }
 
 .contact-map-iframe {
-
   min-width: 390px;
   border: 1px solid var(--clr-secondary);
   padding: 13px;
@@ -152,11 +145,6 @@ h1 {
 
 }
 
-/* 
-.text-right {
-  padding-right: 100px;
-} */
-
 .banner-cup-absolute-box {
   position: absolute;
   left: 50%;
@@ -171,7 +159,6 @@ h1 {
 }
 
 /* -CONTACT FORM - */
-
 .sec-message {
   padding-block: 100px;
 }
@@ -267,7 +254,6 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   font-family: var(--font-sans);
-
 }
 
 .connect-wrap {
@@ -280,11 +266,9 @@ h1 {
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 700;
-  color: #111111;
+  color: var(--clr-neutral-900);
   text-align: center;
-
 }
-
 
 .social-grid {
   display: grid;
@@ -293,7 +277,6 @@ h1 {
   max-width: 1015px;
   padding-top: 60px 0;
   margin-top: 45px;
-
 }
 
 .social-item-link {
@@ -315,7 +298,6 @@ h1 {
   align-items: center;
   justify-content: center;
   color: var(--clr-primary);
-
 }
 
 .social-img-icon {
@@ -427,7 +409,6 @@ h1 {
     bottom: auto;
   }
 
-
   .banner-cup-img {
     width: 280px;
     display: block;
@@ -450,9 +431,7 @@ h1 {
   }
 }
 
-
 @media (max-width: 1024px) {
-
 
   .sec-contact,
   .sec-message,
@@ -483,7 +462,6 @@ h1 {
     line-height: 32px;
   }
 
-
   .banner-container {
     padding-inline: 100px;
     min-height: 280px;
@@ -492,7 +470,6 @@ h1 {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
   }
 
   .banner-cup-absolute-box {
@@ -519,20 +496,16 @@ h1 {
   .social-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-
   }
 
   .social-handle {
     font-size: 16px;
   }
-
-
 }
 
 @media (max-width: 826px) {
   .sec-wrap {
     --max-width: 100%;
-
   }
 
   .sec-contact,
@@ -570,7 +543,6 @@ h1 {
     min-height: auto;
     padding-block: 40px;
     display: flex;
-    /* flex-direction: column; */
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -598,10 +570,7 @@ h1 {
   }
 }
 
-
-
 @media (max-width: 768px) {
-
 
   .sec-contact,
   .sec-message,
@@ -743,7 +712,6 @@ h1 {
 
 @media (max-width: 390px) {
 
-
   .sec-contact,
   .sec-message {
     padding-block: 50px;
@@ -755,9 +723,7 @@ h1 {
 
   .title-line {
     width: 50px;
-
   }
-
 
   .sec-ttl {
     font-size: 25px;
@@ -789,10 +755,8 @@ h1 {
   }
 
   .contact-map-iframe {
-    /* min-width: 100%; */
     border: 1px solid var(--clr-secondary);
     padding: 8px;
-
   }
 
   .contact-map-iframe iframe {
@@ -813,7 +777,6 @@ h1 {
     font-size: 23px;
     line-height: 30px;
     padding-top: 20px;
-
   }
 
   .contact-box p,
@@ -842,7 +805,6 @@ h1 {
     text-align: left;
     z-index: 2;
   }
-
 
   .text-left {
     padding-bottom: 5px;
@@ -892,7 +854,6 @@ h1 {
     margin-top: 10px;
   }
 
-
   .sec-message {
     margin-top: -20px;
   }
@@ -900,11 +861,9 @@ h1 {
   .form-desc {
     font-size: 14px;
     line-height: 21px;
-
   }
 
   .contact-form {
-
     gap: 16px;
   }
 
@@ -923,11 +882,9 @@ h1 {
   .input-group input::placeholder,
   .input-group textarea::placeholder {
     font-size: 14px;
-
   }
 
   .input-group textarea {
-
     padding-block: 5px;
   }
 
@@ -935,14 +892,11 @@ h1 {
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 8px;
-
   }
 
   .connect-title {
     font-size: 35px;
-
   }
-
 
   .connect-wrap {
     margin-top: -10px;
@@ -952,8 +906,6 @@ h1 {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-inline: 15px;
-
-
   }
 
   .social-item-link {
@@ -967,7 +919,6 @@ h1 {
 
   .social-img-icon {
     width: 100%;
-
   }
 
   .social-handle {
